@@ -1,0 +1,31 @@
+[note]
+template = "default.md"
+
+[group.ideas.note]
+template = "idea.md"
+filename = "{{format-date now '%m-%d-%Y'}}-{{slug title}}"
+
+[group.journal.note]
+template = "daily.md"
+filename = "{{format-date now '%m-%d-%Y'}}"
+
+[extra]
+
+[tool]
+shell = "/opt/homebrew/bin/fish"
+
+[format.markdown]
+link-format = "wiki"
+hashtags = false
+colon-tags = false
+multiword-tags = false
+
+[alias]
+daily = "zk new journal --print-path --no-input"
+idea = "zk new ideas --print-path --no-input"
+
+
+
+
+
+
