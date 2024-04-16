@@ -1,3 +1,3 @@
 [keys.normal]
 
-space = { n = [":new", ":insert-output tmux popup -E './.zk/command_picker.sh'", ":clipboard-paste-after", "select_all", "split_selection_on_newline", "goto_file", "goto_last_modified_file", ":buffer-close!"]}
+space = { n = [":new", ":insert-output tmux popup -d \"$(pwd)\" -E \".zk/command_picker.sh\"", ":insert-output pbpaste", "select_all", "split_selection_on_newline", "goto_file", "goto_last_modified_file", ":buffer-close!"]}

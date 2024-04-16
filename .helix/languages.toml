@@ -1,8 +1,12 @@
+[language-server.zk]
+command = "zk"
+args = ["lsp"]
+
+
 [[language]]
 name = "markdown"
 scope = "source.md"
 injection-regex = "md|markdown"
 file-types = ["md", "markdown"]
 roots = [".zk"]
-language-server = { command = "zk", args=["lsp"] }
-
+language-servers = ["zk"]
